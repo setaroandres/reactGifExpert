@@ -1,3 +1,4 @@
+import propTypes from 'prop-types';
 //La fcn de fetch de los gifs esta en helpers
 
 import { useEffect, useState } from "react";
@@ -32,4 +33,8 @@ export const GifGrid = ({category}) => {
 				</div>
 			</>
 	)
+}
+
+GifGrid.prototype = {
+	category: propTypes.string.isRequired
 }
